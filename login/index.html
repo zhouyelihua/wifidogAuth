@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+<title>网络登录界面</title>
+<meta charset="utf-8"/>
+
+<script>
+//产生日期随机数
+var now=new Date(); 
+var number = now.getSeconds() * now.getMinutes() * now.getHours() * now.getDate() * now.getYear() + Math.floor(Math.random()*10099+99);
+//输出查看 
+document.write(number) 
+</script>
+
+</head>
+<body>
+<center>
+<h1>免费热点登录</h1><br />
+<a href="#" onclick="this.href='http://100.64.100.100:2060/wifidog/auth?token='+number"><h2>点此登录<h2></a>
+</center>
+</body>
+</html>
